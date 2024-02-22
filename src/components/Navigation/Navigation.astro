@@ -1,0 +1,30 @@
+---
+import "./Navigation.css";
+
+interface Props {
+  previousLink?: string;
+  previousLinkText?: string;
+  nextLink?: string;
+  nextLinkText?: string;
+}
+
+const { previousLink, previousLinkText, nextLink, nextLinkText } = Astro.props;
+---
+<nav class="navigation">
+  <div class="navigation__item">
+    {
+      previousLink && (
+        <a href={previousLink} class="navigation__link-label">Anterior</a>
+        <a href={previousLink} class="navigation__link-text">{previousLinkText}</a>
+      )
+    }    
+  </div>
+  <div class="navigation__item">
+    {
+      nextLink && (
+        <a href={nextLink} class="navigation__link-label">Siguiente</a>
+        <a href={nextLink} class="navigation__link-text">{nextLinkText}</a>
+      )
+    }    
+  </div>
+</nav>

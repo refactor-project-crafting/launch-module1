@@ -1,0 +1,48 @@
+.main-sidebar {
+  margin: 20px 0;
+  position: fixed;
+  height: calc(100vh - var(--height-footer));
+  padding-top: var(--height-header-desktop);
+  padding-bottom: 20px;
+  overflow-y: auto;
+  display: none;
+
+  @media (min-width: 845px) {
+    display: block;
+    width: 200px;
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 1rem;
+    width: 300px;
+  }
+}
+
+.main-navigation {
+  margin: 20px 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  > ul > li > ul > li {
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px 10px 0;
+
+    ul {
+      margin-left: 10px;
+      margin-top: 10px;
+      position: relative;
+
+      li::before {
+        content: "-";
+        position: absolute;
+        left: -10px;
+      }
+    }
+  }
+}

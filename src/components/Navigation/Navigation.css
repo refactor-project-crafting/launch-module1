@@ -1,0 +1,19 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.navigation__item {
+  display: flex;
+  flex-direction: column;
+
+  &:last-child {
+    align-items: flex-end;
+  }
+}
+
+.navigation__link-text {
+  font-size: 1.2rem;
+}

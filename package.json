@@ -1,0 +1,28 @@
+{
+  "name": "module1",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.5",
+    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/netlify": "^5.1.2",
+    "@fontsource-variable/roboto-flex": "^5.0.8",
+    "@supabase/supabase-js": "^2.39.7",
+    "astro": "^4.4.2",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "eslint-plugin-astro": "^0.31.4",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "lint-staged": "^15.2.2"
+  }
+}

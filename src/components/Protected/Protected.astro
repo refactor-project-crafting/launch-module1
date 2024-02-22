@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { type ComponentProps } from "../../types"
+import {supabase} from "../../lib/supabase"
+
+type Props = ComponentProps;
+
+const { cookies } = Astro;
+const { isDeep = true, navigation } = Astro.props;
+
+const accessToken = cookies.get("sb-access-token");
+const refreshToken = cookies.get("sb-refresh-token");
+
+let isLogged = !!accessToken && !!refreshToken;
+
+if (isLogged) {
+  const { error } = await supabase.auth.setSession({
+    refresh_token: refreshToken!.value,
+    access_token: accessToken!.value,
+  });
+
+  if (error) {
+    cookies.delete("sb-access-token", {
+      path: "/",
+    });
+    cookies.delete("sb-refresh-token", {
+      path: "/",
+    });
+
+    isLogged = false;
+  }
+}
+
+console.log('isLogged', isLogged);
+---
+<BaseLayout isDeep={isDeep} isLogged={isLogged} navigation={navigation}>
+{
+  isLogged ? (    
+    <slot />
+  ) : (
+    <div class="login">
+      <form action="/api/auth/signin" method="post">
+        <button type="submit" class="signin">Inicia sesión con Github</button>
+      </form>
+    </div>
+  )
+}
+</BaseLayout>
+
+
+
+

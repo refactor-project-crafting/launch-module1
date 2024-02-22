@@ -1,0 +1,17 @@
+---
+import type { LoginProps } from "../../types";
+import "./Header.css";
+
+type Props = LoginProps;
+
+const {isLogged} = Astro.props;
+---
+<header class="main-header">
+  <a href="/"><img src="/logo-the-refactor-project.svg" class="main-logo" alt="Logotipo de The Refactor Project" width="200" height="64"></a>
+  <h1 class="main-title">Crafting en Desarrollo Web Profesional</h1>
+  { 
+    isLogged && (
+      <a href="/api/auth/signout" class="signout">Cerrar sesión</a>
+    )
+  }
+</header>

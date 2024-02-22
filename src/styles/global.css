@@ -1,0 +1,142 @@
+:root {
+  --color-primary: #211f1f;
+  --color-secondary: #fff;
+  --color-brand: #212344;
+  --color-brand-accent: #b6203a;
+  --font-family-text: "Roboto Flex Variable", sans-serif;
+  --height-header: 100px;
+  --height-header-desktop: 80px;
+  --height-footer: 80px;
+  --width-container: 1200px;
+  --page-padding-top: 20px;
+  --page-padding-bottom: 40px;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-text);
+  margin: 0;
+  min-height: 100vh;
+  line-height: 1.75;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #212344;
+}
+
+a {
+  color: var(--color-brand-accent);
+  text-decoration: none;
+}
+
+pre.astro-code {
+  padding: 20px 10px;
+}
+
+:not(pre) > code {
+  background-color: #21234411;
+  color: var(--color-brand-accent);
+  padding: 2px 5px;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: transparent;
+}
+
+img,
+iframe {
+  max-width: 100%;
+}
+
+code {
+  pointer-events: none;
+  user-select: none;
+}
+
+.signin,
+.signout {
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.signin {
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 10px 20px;
+
+  &:hover,
+  &:focus {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+  }
+}
+
+.signout {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 5px 10px;
+  font-size: 0.8rem;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+  }
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(
+    100vh - var(--height-header) - var(--height-footer) -
+      var(--page-padding-top) - var(--page-padding-bottom)
+  );
+
+  @media (min-width: 845px) {
+    margin-left: -300px;
+    height: calc(
+      100vh - var(--height-header-desktop) - var(--height-footer) -
+        var(--page-padding-top) - var(--page-padding-bottom)
+    );
+  }
+
+  div {
+    text-align: center;
+  }
+}
+
+.featured {
+  border: 3px solid var(--color-brand-accent);
+  padding: 20px;
+  margin: 50px 0;
+  position: relative;
+
+  &::after {
+    content: url("data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%2022.119484%2019.156378%22%20version%3D%221.1%22%20id%3D%22svg1%22%20xmlns%3Ainkscape%3D%22http%3A%2F%2Fwww.inkscape.org%2Fnamespaces%2Finkscape%22%20xmlns%3Asodipodi%3D%22http%3A%2F%2Fsodipodi.sourceforge.net%2FD%2Fsodipodi-0.dtd%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Asvg%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Csodipodi%3Anamedview%20id%3D%22namedview1%22%20pagecolor%3D%22%23ffffff%22%20bordercolor%3D%22%23000000%22%20borderopacity%3D%220.25%22%20inkscape%3Ashowpageshadow%3D%222%22%20inkscape%3Apageopacity%3D%220.0%22%20inkscape%3Apagecheckerboard%3D%220%22%20inkscape%3Adeskcolor%3D%22%23d1d1d1%22%20inkscape%3Adocument-units%3D%22mm%22%20%2F%3E%3Cdefs%20id%3D%22defs1%22%20%2F%3E%3Cg%20inkscape%3Alabel%3D%22Capa%201%22%20inkscape%3Agroupmode%3D%22layer%22%20id%3D%22layer1%22%20transform%3D%22translate%28-116.72436%2C-59.99845%29%22%3E%3Cg%20id%3D%22g2-1-8-1%22%20transform%3D%22matrix%280.16711932%2C0%2C0%2C0.16711932%2C151.06706%2C26.111417%29%22%20style%3D%22fill%3A%23000000%3Bfill-opacity%3A1%22%3E%3Cpath%20id%3D%22path8-5-5-7-6%22%20style%3D%22fill%3A%23000000%3Bfill-opacity%3A1%3Bstroke-width%3A1.00157%3Bstroke-dasharray%3Anone%22%20d%3D%22m%20-141.05273%2C205.77148%20c%20-21.48189%2C37.20892%20-42.96287%2C74.41836%20-64.44532%2C111.62696%20h%20132.357425%20c%20-22.060587%2C-38.20859%20-44.119105%2C-76.41837%20-66.179685%2C-114.62696%20-0.57748%2C1%20-1.15495%2C2%20-1.73242%2C3%20z%20m%2057.455074%2C105.52344%20H%20-195.04297%20c%2017.24089%2C-30.12239%2038.48177%2C-68.24479%2055.72266%2C-98.36719%2017.24088%2C30.1224%2038.48177%2C68.2448%2055.722654%2C98.36719%20z%22%20%2F%3E%3Cpath%20style%3D%22fill%3A%23000000%3Bfill-opacity%3A1%22%20id%3D%22path7-1-0-2%22%20d%3D%22m%20168.89009%2C494.67539%20h%20-68.092%20l%2034.046%2C-58.9694%20z%22%20transform%3D%22translate%28-274.16258%2C-195.10539%29%22%20%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+  }
+}
+
+.picture {
+  text-align: center;
+  margin: 20px 0;
+
+  img {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+}
