@@ -31,7 +31,7 @@ Aquí tienes los ajustes que tendrás que incluir en los que ya tienes. Cuidado,
 ```json
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[html]": {
