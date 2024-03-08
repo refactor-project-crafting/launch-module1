@@ -8,6 +8,7 @@ type ImportMetaEnv = {
   readonly SUPABASE_URL: string;
   readonly SUPABASE_ANON_KEY: string;
   readonly CALLBACK_URL: string;
+  readonly FLAGSMITH_ENVIRONMENT: string;
 };
 
 type ImportMeta = {

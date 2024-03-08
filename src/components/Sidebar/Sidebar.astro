@@ -1,5 +1,9 @@
 ---
+import { flagsmith } from "../../lib/flagsmith";
 import "./Sidebar.css";
+
+const flags = await flagsmith.getEnvironmentFlags();
+const challengeNumber = +(flags.getFeatureValue('challenge-number'));
 ---
 <aside class="main-sidebar">
   <strong>Módulo 1: Introducción al Desarrollo Web</strong>
@@ -66,6 +70,13 @@ import "./Sidebar.css";
           </li>      
         </ul>
       </li>
+      { 
+        challengeNumber > 1 && (
+          <li>
+            <a href="/challenge2">Reto 2: El juego de la vida</a>
+          </li>
+        )
+      }
     </ul>
   </nav>
 </aside>

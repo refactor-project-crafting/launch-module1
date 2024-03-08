@@ -16,6 +16,7 @@
     "@fontsource-variable/roboto-flex": "^5.0.8",
     "@supabase/supabase-js": "^2.39.7",
     "astro": "^4.4.2",
+    "flagsmith-nodejs": "^3.2.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

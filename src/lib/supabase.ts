@@ -7,5 +7,5 @@ export const supabase = createClient(
     auth: {
       flowType: "pkce",
     },
-  },
+  }
 );
