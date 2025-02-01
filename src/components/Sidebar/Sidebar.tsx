@@ -1,4 +1,4 @@
-import { useLocation } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import "./Sidebar.css";
 
 const Sidebar: React.FC = () => {
@@ -18,188 +18,133 @@ const Sidebar: React.FC = () => {
     .split("/")[1]
     .replace("challenge", "");
 
-  const checkSection = (section: string) => {
-    return currentPath.endsWith(section);
-  };
-
   return (
     <aside className="main-sidebar">
       <strong>Módulo 1: Launch</strong>
       <nav className="main-navigation">
         <ul className={`${publishedChallengeNumber > 1 ? "passed" : ""}`}>
           <li>
-            <a
-              href="/challenge1"
-              className={checkSection("/challenge1") ? "current" : ""}
-            >
+            <NavLink end to="/challenge1/introduccion">
               Reto 1: Acceso restringido
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a
-              href="/challenge1/entregas"
-              className={checkSection("/challenge1/entregas") ? "current" : ""}
-            >
+            <NavLink end to="/challenge1/entregas">
               Resumen de entregas
-            </a>
+            </NavLink>
             <ul className={currentChallengeNumber === 1 ? "open" : ""}>
               <li>
-                <a
-                  href="/challenge1/os"
-                  className={checkSection("/os") ? "current" : ""}
-                >
+                <NavLink end to="/challenge1/os">
                   <strong>Fase 1:</strong> Tu Sistema Operativo y su terminal
-                </a>
+                </NavLink>
                 <ul>
                   <li>
-                    <a
-                      href="/challenge1/os/moviendote-por-tu-disco-duro"
-                      className={
-                        checkSection("/moviendote-por-tu-disco-duro")
-                          ? "current"
-                          : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/os/moviendote-por-tu-disco-duro"
                     >
                       Moviéndote por tu disco duro
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
-                  href="/challenge1/herramientas"
-                  className={checkSection("/herramientas") ? "current" : ""}
-                >
-                  <strong>Fase 2:</strong> Las herramientas del developer
-                </a>
+                <NavLink end to="/challenge1/herramientas">
+                  <strong>Fase 2:</strong> Las herramientas del/la developer
+                </NavLink>
                 <ul>
                   <li>
-                    <a
-                      href="/challenge1/herramientas/configuracion-vs-code"
-                      className={
-                        checkSection("/configuracion-vs-code") ? "current" : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/herramientas/configuracion-vs-code"
                     >
                       Configuración del VS Code
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/herramientas/configuracion-git"
-                      className={
-                        checkSection("/configuracion-git") ? "current" : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/herramientas/configuracion-git"
                     >
                       Configuración de Git
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
-                  href="/challenge1/calentando-motores-js"
-                  className={
-                    checkSection("/calentando-motores-js") ? "current" : ""
-                  }
-                >
+                <NavLink end to="/challenge1/calentando-motores-js">
                   <strong>Fase 3:</strong> Calentando motores con JS
-                </a>
+                </NavLink>
                 <ul>
                   <li>
-                    <a
-                      href="/challenge1/calentando-motores-js/tu-primer-programa"
-                      className={
-                        checkSection("/tu-primer-programa") ? "current" : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/calentando-motores-js/tu-primer-programa"
                     >
                       Tu primer programa
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/calentando-motores-js/variables"
-                      className={checkSection("/variables") ? "current" : ""}
+                    <NavLink
+                      end
+                      to="/challenge1/calentando-motores-js/variables"
                     >
                       Variables
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/calentando-motores-js/expresiones"
-                      className={checkSection("/expresiones") ? "current" : ""}
+                    <NavLink
+                      end
+                      to="/challenge1/calentando-motores-js/expresiones"
                     >
                       Expresiones
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/calentando-motores-js/finaliza-tu-primer-programa"
-                      className={
-                        checkSection("/finaliza-tu-primer-programa")
-                          ? "current"
-                          : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/calentando-motores-js/finaliza-tu-primer-programa"
                     >
                       Finaliza tu primer programa
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
-                  href="/challenge1/entorno-de-desarrollo"
-                  className={
-                    checkSection("/entorno-de-desarrollo") ? "current" : ""
-                  }
-                >
+                <NavLink end to="/challenge1/entorno-de-desarrollo">
                   <strong>Fase 4:</strong> Un entorno de desarrollo
-                </a>
+                </NavLink>
                 <ul>
                   <li>
-                    <a
-                      href="/challenge1/entorno-de-desarrollo/tu-segundo-programa"
-                      className={
-                        checkSection("/tu-segundo-programa") ? "current" : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/entorno-de-desarrollo/tu-segundo-programa"
                     >
                       Tu segundo programa
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/entorno-de-desarrollo/operaciones-con-strings"
-                      className={
-                        checkSection("/operaciones-con-strings")
-                          ? "current"
-                          : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/entorno-de-desarrollo/operaciones-con-strings"
                     >
                       Operaciones con strings
-                    </a>
+                    </NavLink>
                   </li>
                   <li>
-                    <a
-                      href="/challenge1/entorno-de-desarrollo/operaciones-con-numbers"
-                      className={
-                        checkSection("/operaciones-con-numbers")
-                          ? "current"
-                          : ""
-                      }
+                    <NavLink
+                      end
+                      to="/challenge1/entorno-de-desarrollo/operaciones-con-numbers"
                     >
                       Operaciones con numbers
-                    </a>
+                    </NavLink>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
-                  href="/challenge1/el-programa-definitivo"
-                  className={
-                    checkSection("/el-programa-definitivo") ? "current" : ""
-                  }
-                >
+                <NavLink end to="/challenge1/el-programa-definitivo">
                   <strong>Fase 5</strong>: El programa definitivo del reto
-                </a>
+                </NavLink>
               </li>
             </ul>
           </li>
@@ -207,182 +152,118 @@ const Sidebar: React.FC = () => {
         {publishedChallengeNumber > 1 && (
           <ul className={`${publishedChallengeNumber > 2 ? "passed" : ""}`}>
             <li>
-              <a
-                href="/challenge2"
-                className={checkSection("/challenge2") ? "current" : ""}
-              >
+              <NavLink end to="/challenge2/introduccion">
                 Reto 2: Un poco de música
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/challenge2/entregas"
-                className={
-                  checkSection("/challenge2/entregas") ? "current" : ""
-                }
-              >
+              <NavLink end to="/challenge2/entregas">
                 Resumen de entregas
-              </a>
+              </NavLink>
               <ul className={currentChallengeNumber === 2 ? "open" : ""}>
                 <li>
-                  <a
-                    href="/challenge2/typescript"
-                    className={checkSection("/typescript") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge2/typescript">
                     <strong>Fase 1:</strong> TypeScript
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge2/typescript/tu-primer-programa-en-typescript"
-                        className={
-                          checkSection("/tu-primer-programa-en-typescript")
-                            ? "current"
-                            : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/typescript/tu-primer-programa-en-typescript"
                       >
                         Tu primer programa en TypeScript
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/typescript/type-checking"
-                        className={
-                          checkSection("/type-checking") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge2/typescript/type-checking">
                         Type-checking
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge2/estructuras-de-control"
-                    className={
-                      checkSection("/estructuras-de-control") ? "current" : ""
-                    }
-                  >
+                  <NavLink end to="/challenge2/estructuras-de-control">
                     <strong>Fase 2:</strong> Estructuras de control
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge2/estructuras-de-control/condicionales"
-                        className={
-                          checkSection("/condicionales") ? "current" : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/estructuras-de-control/condicionales"
                       >
                         Condicionales
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/estructuras-de-control/expresiones-ternarias"
-                        className={
-                          checkSection("/expresiones-ternarias")
-                            ? "current"
-                            : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/estructuras-de-control/expresiones-ternarias"
                       >
                         Expresiones ternarias
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/estructuras-de-control/bucles"
-                        className={checkSection("/bucles") ? "current" : ""}
+                      <NavLink
+                        end
+                        to="/challenge2/estructuras-de-control/bucles"
                       >
                         Bucles
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge2/arrays"
-                    className={checkSection("/arrays") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge2/arrays">
                     <strong>Fase 3:</strong> Arrays
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge2/arrays/crear-y-modificar-un-array"
-                        className={
-                          checkSection("/crear-y-modificar-un-array")
-                            ? "current"
-                            : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/arrays/crear-y-modificar-un-array"
                       >
                         Crear y modificar un array
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/arrays/recorrer-un-array"
-                        className={
-                          checkSection("/recorrer-un-array") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge2/arrays/recorrer-un-array">
                         Recorrer un array
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/arrays/metodos-de-arrays"
-                        className={
-                          checkSection("/metodos-de-arrays") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge2/arrays/metodos-de-arrays">
                         Métodos de arrays
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge2/arrays/mejorando-la-lista-de-canciones"
-                        className={
-                          checkSection("/mejorando-la-lista-de-canciones")
-                            ? "current"
-                            : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/arrays/mejorando-la-lista-de-canciones"
                       >
                         Mejorando la lista de canciones
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge2/objetos"
-                    className={checkSection("/objetos") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge2/objetos">
                     <strong>Fase 4:</strong> Objetos
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge2/objetos/acceder-propiedades-objeto"
-                        className={
-                          checkSection("/acceder-propiedades-objeto")
-                            ? "current"
-                            : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge2/objetos/acceder-propiedades-objeto"
                       >
                         Acceder a las propiedades de un objeto
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge2/reproductor-de-musica"
-                    className={
-                      checkSection("/reproductor-de-musica") ? "current" : ""
-                    }
-                  >
+                  <NavLink end to="/challenge2/reproductor-de-musica">
                     <strong>Fase 5:</strong> El reproductor de música
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -391,138 +272,86 @@ const Sidebar: React.FC = () => {
         {publishedChallengeNumber > 2 && (
           <ul className={`${publishedChallengeNumber > 3 ? "passed" : ""}`}>
             <li>
-              <a
-                href="/challenge3"
-                className={checkSection("/challenge3") ? "current" : ""}
-              >
+              <NavLink end to="/challenge3/introduccion">
                 Reto 3: La aplicación de sorteos
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/challenge3/entregas"
-                className={
-                  checkSection("/challenge3/entregas") ? "current" : ""
-                }
-              >
+              <NavLink end to="/challenge3/entregas">
                 Resumen de entregas
-              </a>
+              </NavLink>
               <ul className={currentChallengeNumber === 3 ? "open" : ""}>
                 <li>
-                  <a
-                    href="/challenge3/git"
-                    className={checkSection("/git") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge3/git">
                     <strong>Fase 1:</strong> Git
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge3/git/repositorios"
-                        className={
-                          checkSection("/repositorios") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge3/git/repositorios">
                         Repositorios
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge3/git/jugando-con-git"
-                        className={
-                          checkSection("/jugando-con-git") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge3/git/jugando-con-git">
                         Jugando con Git
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge3/funciones"
-                    className={checkSection("/funciones") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge3/funciones">
                     <strong>Fase 2:</strong> Funciones
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge3/funciones/caja-negra"
-                        className={checkSection("/caja-negra") ? "current" : ""}
-                      >
+                      <NavLink end to="/challenge3/funciones/caja-negra">
                         Caja negra
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge3/funciones/entrada-salida"
-                        className={
-                          checkSection("/entrada-salida") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge3/funciones/entrada-salida">
                         Entrada y salida
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge3/funciones/expresiones"
-                        className={
-                          checkSection("/expresiones") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge3/funciones/expresiones">
                         Expresiones
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge3/arrays-objetos"
-                    className={checkSection("/arrays-objetos") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge3/arrays-objetos">
                     <strong>Fase 3:</strong> Arrays y objetos
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge3/arrays-objetos/metodos-arrays"
-                        className={
-                          checkSection("/metodos-arrays") ? "current" : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge3/arrays-objetos/metodos-arrays"
                       >
                         Métodos de arrays
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge3/arrays-objetos/mezclando-todo"
-                        className={
-                          checkSection("/mezclando-todo") ? "current" : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge3/arrays-objetos/mezclando-todo"
                       >
                         Mezclando todo
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li>
-                  <a
-                    href="/challenge3/app-sorteos"
-                    className={checkSection("/app-sorteos") ? "current" : ""}
-                  >
+                  <NavLink end to="/challenge3/app-sorteos">
                     <strong>Fase 4:</strong> Aplicación de sorteos
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge3/app-sorteos/backlog"
-                        className={
-                          checkSection("/app-sorteos/backlog") ? "current" : ""
-                        }
-                      >
+                      <NavLink end to="/challenge3/app-sorteos/backlog">
                         Backlog
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>
@@ -533,50 +362,32 @@ const Sidebar: React.FC = () => {
         {publishedChallengeNumber > 3 && (
           <ul className={`${publishedChallengeNumber > 4 ? "passed" : ""}`}>
             <li>
-              <a
-                href="/challenge4"
-                className={checkSection("/challenge4") ? "current" : ""}
-              >
+              <NavLink end to="/challenge4/introduccion">
                 Reto 4: La aplicación Classroom
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="/challenge4/entregas"
-                className={
-                  checkSection("/challenge4/entregas") ? "current" : ""
-                }
-              >
+              <NavLink end to="/challenge4/entregas">
                 Resumen de entregas
-              </a>
+              </NavLink>
               <ul className={currentChallengeNumber === 4 ? "open" : ""}>
                 <li>
-                  <a
-                    href="/challenge4/especificaciones"
-                    className={
-                      checkSection("/especificaciones") ? "current" : ""
-                    }
-                  >
+                  <NavLink end to="/challenge4/especificaciones">
                     <strong>Fase 1:</strong> Especificaciones
-                  </a>
+                  </NavLink>
                   <ul>
                     <li>
-                      <a
-                        href="/challenge4/especificaciones/user-stories"
-                        className={
-                          checkSection("/user-stories") ? "current" : ""
-                        }
+                      <NavLink
+                        end
+                        to="/challenge4/especificaciones/user-stories"
                       >
                         User stories
-                      </a>
+                      </NavLink>
                     </li>
                     <li>
-                      <a
-                        href="/challenge4/especificaciones/backlog"
-                        className={checkSection("/backlog") ? "current" : ""}
-                      >
+                      <NavLink end to="/challenge4/especificaciones/backlog">
                         Backlog
-                      </a>
+                      </NavLink>
                     </li>
                   </ul>
                 </li>

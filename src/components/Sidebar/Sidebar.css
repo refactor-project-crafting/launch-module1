@@ -72,7 +72,7 @@
     display: block;
   }
 
-  .current {
+  .active {
     font-weight: bold;
 
     &::before {

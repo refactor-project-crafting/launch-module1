@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import "./Header.css";
 
 const Header: React.FC = () => {
@@ -5,7 +6,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="main-header">
-      <a href="/">
+      <Link to="/">
         <img
           src="/logo-the-refactor-project.svg"
           className="main-logo"
@@ -13,12 +14,12 @@ const Header: React.FC = () => {
           width="200"
           height="64"
         />
-      </a>
+      </Link>
       <h1 className="main-title">Bootcamp de Programación Web Full Stack</h1>
       {isLogged && (
-        <a href="/api/auth/signout" className="signout">
+        <Link to="/api/auth/signout" className="signout">
           Cerrar sesión
-        </a>
+        </Link>
       )}
     </header>
   );

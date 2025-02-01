@@ -145,6 +145,14 @@ code {
   }
 }
 
+.stop {
+  background-color: var(--color-brand-accent);
+  color: #fff;
+  border-radius: 10px;
+  display: inline;
+  padding: 7px 7px 5px;
+}
+
 .comparison__double {
   display: grid;
   grid-template-columns: 1fr 1fr;
