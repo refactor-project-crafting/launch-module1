@@ -3,18 +3,23 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Layout.css";
+import { useContext } from "react";
+import AuthContext from "../../auth/AuthContext/AuthContext";
+import Protected from "../Protected/Protected";
 
 const Layout: React.FC = () => {
-  const isLogged = true;
+  const { isLoggedIn } = useContext(AuthContext);
 
   return (
     <>
       <div className="container">
         <Header />
         <div className="main-block">
-          {isLogged && <Sidebar />}
+          {isLoggedIn && <Sidebar />}
           <main className="main-content">
-            <Outlet />
+            <Protected>
+              <Outlet />
+            </Protected>
           </main>
         </div>
       </div>

@@ -6,12 +6,8 @@ const Challenge1Deliveries: React.FC = () => {
       <h2>Entregas del reto 1</h2>
       <p>
         Aquí tienes el resumen de todas las entregas que te pedimos en el reto
-        1. Cada vez que quieras hacer una entrega, ve a este formulario y
-        entrega el ejercicio que desees:{" "}
-        <Link to="https://forms.gle/JfS3rSYyWbVwxih68" target="_blank">
-          Formulario de entregas
-        </Link>
-        .
+        1. Cada vez que quieras hacer una entrega, ve al formulario que has
+        recibido y entrega el ejercicio que desees.
       </p>
       <p>
         Puedes rellenar el formulario tantas veces como quieras. Puedes

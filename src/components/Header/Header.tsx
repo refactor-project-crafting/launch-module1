@@ -1,9 +1,8 @@
 import { Link } from "react-router";
+import { LogoutButton } from "../../auth/components/Logout/Logout";
 import "./Header.css";
 
 const Header: React.FC = () => {
-  const isLogged = true;
-
   return (
     <header className="main-header">
       <Link to="/">
@@ -16,11 +15,7 @@ const Header: React.FC = () => {
         />
       </Link>
       <h1 className="main-title">Bootcamp de Programación Web Full Stack</h1>
-      {isLogged && (
-        <Link to="/api/auth/signout" className="signout">
-          Cerrar sesión
-        </Link>
-      )}
+      <LogoutButton />
     </header>
   );
 };

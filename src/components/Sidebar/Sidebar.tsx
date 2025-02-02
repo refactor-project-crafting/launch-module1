@@ -1,10 +1,17 @@
 import { NavLink, useLocation } from "react-router";
+import { useFlagsmith } from "flagsmith/react";
 import "./Sidebar.css";
+import useConsoleDebug from "../../debug/useConsoleDebug";
 
 const Sidebar: React.FC = () => {
-  const publishedChallengeNumber = 10;
+  const flagsmith = useFlagsmith();
+  const debug = useConsoleDebug();
 
-  console.log("flag: published challenge number -> ", publishedChallengeNumber);
+  const publishedChallengeNumber = Number(
+    flagsmith.getValue("challenge-number")
+  );
+
+  debug("Challenge publicado: ", publishedChallengeNumber);
 
   const location = useLocation();
 
