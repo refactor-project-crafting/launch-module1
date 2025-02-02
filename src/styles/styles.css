@@ -65,6 +65,10 @@ code {
   user-select: none;
 }
 
+:is(h2, h3, h4)[id] {
+  scroll-margin-top: 100px;
+}
+
 .signin,
 .signout {
   transition: all 0.3s ease-in-out;

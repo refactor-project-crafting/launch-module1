@@ -46,7 +46,7 @@ const Challenge1SecondProgram: React.FC = () => {
       </h3>
       <p>
         Usando el starter proporcionado, crea un programa que declare cuatro
-        variables:
+        variables y asígnale valores:
       </p>
       <ul>
         <li>una para el nombre de usuario</li>

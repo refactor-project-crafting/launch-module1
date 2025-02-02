@@ -9,13 +9,18 @@ const ScrollToTop: React.FC = () => {
     const currentPathname = location.pathname;
     const previousPathname = previousPathnameRef.current;
 
-    if (location.hash && currentPathname !== previousPathname) {
-      setTimeout(() => {
-        window.scrollBy({
-          top: -100,
-          behavior: "smooth",
-        });
-      });
+    if (currentPathname !== previousPathname) {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+
+        return;
+      }
+
+      window.scrollTo({ top: 0, behavior: "instant" });
     }
 
     previousPathnameRef.current = currentPathname;
