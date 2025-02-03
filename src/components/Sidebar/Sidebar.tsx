@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from "react-router";
 import { useFlagsmith } from "flagsmith/react";
-import "./Sidebar.css";
 import useConsoleDebug from "../../debug/useConsoleDebug";
+import "./Sidebar.css";
 
 const Sidebar: React.FC = () => {
   const flagsmith = useFlagsmith();

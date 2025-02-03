@@ -24,6 +24,14 @@ export const signInWithGitHub = async () => {
 };
 
 export const getAuthenticatedUser = async () => {
+  if (window.location.host.includes("localhost")) {
+    return {
+      user_metadata: {
+        user_name: "the-refactor-project",
+      },
+    };
+  }
+
   const { data, error } = await supabase.auth.getUser();
 
   if (error) {

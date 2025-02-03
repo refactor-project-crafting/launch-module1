@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
 import { FlagsmithProvider } from "flagsmith/react";
 import AppRouter from "./router/AppRouter";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ScrollToTop from "@components/ScrollToTop/ScrollToTop";
 import AuthContextProvider from "./auth/AuthContext/AuthContextProvider";
 import flagsmith from "./auth/flagsmith";
 import "@fontsource-variable/roboto-flex/index.css";
