@@ -191,7 +191,7 @@ const Challenge1Os: React.FC = () => {
         <code>C:\Users\refactor</code>. Si estás en macOS y ves
         <code>luis@MacBook-Pro-de-Luis ~ %</code>, significa que estás en la
         carpeta <code>/Users/luis</code> (ese símbolo <code>~</code> es una
-        abreviatura de tu directorio personal).
+        abreviatura de tu directorio personal en UNIX).
       </p>
       <figure style={{ textAlign: "center" }}>
         <img

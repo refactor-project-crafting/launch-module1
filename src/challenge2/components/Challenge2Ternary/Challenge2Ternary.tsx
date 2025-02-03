@@ -85,6 +85,107 @@ age >= 18
       <h3>
         Valores <code>truthy</code> y <code>falsy</code>
       </h3>
+      <p>
+        En varias ocasiones hemos dicho que hay que usar una condición que
+        evalúe a un booleano (en el <code>if</code>, en el <code>switch</code> y
+        en la expresión ternaria). Pero qué pasa si en estas estructuras
+        escribimos una expresión que no resuelve a <code>true</code> o a{" "}
+        <code>false</code>? ¿Dará algún error?
+      </p>
+      <p>
+        No, cuando JS espere una expresión que resuelve a un booleano, y le
+        escribamos una expresión que resuelve a un valor de otro tipo, JS
+        convertirá ese valor a un booleano, siguiendo estas reglas:
+      </p>
+      <ul>
+        <li>
+          <p>
+            <strong>
+              Valores <em>falsy</em>
+            </strong>
+            : son aquellos valores que, al convertirlos a booleano, resuelven a{" "}
+            <code>false</code>. Los valores falsy son:
+          </p>
+          <ul>
+            <li>
+              <code>false</code>
+            </li>
+            <li>
+              <code>0</code>
+            </li>
+            <li>
+              <code>&quot;&quot;</code>
+            </li>
+            <li>
+              <code>null</code>
+            </li>
+            <li>
+              <code>undefined</code>
+            </li>
+            <li>
+              <code>NaN</code>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong>
+              Valores <em>truthy</em>
+            </strong>
+            : son aquellos valores que, al convertirlos a booleano, resuelven a{" "}
+            <code>true</code>. Todos los valores son <em>truthy</em> excepto los{" "}
+            <em>falsy</em>.
+          </p>
+        </li>
+      </ul>
+      <h3>Prueba</h3>
+      <p>
+        Vamos a hacer una prueba para comprobar que JS convierte los valores a
+        booleanos cuando espera un booleano. Abre tu consola y escribe lo
+        siguiente:
+      </p>
+      <CodeJs>{`console.log(!"");
+console.log(!0);
+console.log(!undefined);
+console.log(!null);
+console.log(!NaN);
+console.log(!"hola");`}</CodeJs>
+      <p>
+        Si ejecutas este código verás que JS convierte los valores a booleanos.
+        Los valores <em>falsy</em> resuelven a <code>false</code> y el valor{" "}
+        <em>truthy</em> resuelve a <code>true</code>. Esto es porque el operador
+        NOT siempre va a dar como resultado un booleano (si el valor es{" "}
+        <em>falsy</em> resuelve a <code>true</code>, si el valor es{" "}
+        <em>truthy</em> resuelve a <code>false</code>):
+      </p>
+      <ul>
+        <li>
+          <code>!&quot;&quot;</code> resuelve a <code>true</code>
+        </li>
+        <li>
+          <code>!0</code> resuelve a <code>true</code>
+        </li>
+        <li>
+          <code>!undefined</code> resuelve a <code>true</code>
+        </li>
+        <li>
+          <code>!null</code> resuelve a <code>true</code>
+        </li>
+        <li>
+          <code>!NaN</code> resuelve a <code>true</code>
+        </li>
+        <li>
+          <code>!&quot;hola&quot;</code> resuelve a <code>false</code>
+        </li>
+      </ul>
+      <p>
+        Y si a esa expresión le añades otro operador NOT, que vuelve a negar el
+        valor, obtendrás el valor original convertido a booleano.
+      </p>
+      <p>Prueba:</p>
+      <CodeJs>{`console.log(!!"");
+console.log(!!0);
+console.log(!!"hola");`}</CodeJs>
     </>
   );
 };

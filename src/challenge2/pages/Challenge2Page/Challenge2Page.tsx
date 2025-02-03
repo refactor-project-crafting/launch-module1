@@ -7,6 +7,7 @@ import Challenge2FirstProgram from "@challenge2/components/Challenge2FirstProgra
 import Challenge2Control from "@challenge2/components/Challenge2Control/Challenge2Control";
 import Challenge2Conditionals from "@challenge2/components/Challenge2Conditionals/Challenge2Conditionals";
 import Challenge2Ternary from "@challenge2/components/Challenge2Ternary/Challenge2Ternary";
+import Challenge2Loops from "@challenge2/components/Challenge2Loops/Challenge2Loops";
 
 const Challenge2Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -28,7 +29,8 @@ const Challenge2Page: React.FC = () => {
     | "tu-primer-programa-en-typescript"
     | "type-checking"
     | "condicionales"
-    | "expresiones-ternarias";
+    | "expresiones-ternarias"
+    | "bucles";
 
   if (sectionId === "introduccion") {
     return <Challenge2Intro />;
@@ -63,6 +65,10 @@ const Challenge2Page: React.FC = () => {
 
     if (subsectionId === "expresiones-ternarias") {
       return <Challenge2Ternary />;
+    }
+
+    if (subsectionId === "bucles") {
+      return <Challenge2Loops />;
     }
   }
 };

@@ -125,7 +125,7 @@ int main() {
         <p>
           Cuando se utiliza un lenguaje compilado, al código que los developers
           escribimos se le llama <strong>código fuente</strong>. El código
-          fuente no se puede ejecutar, sino que necesita ser traducido a un
+          fuente no se puede ejecutar, sino que necesita ser traducido a un{" "}
           <strong>código compilado</strong> para poder ser ejecutado.
         </p>
         <p>

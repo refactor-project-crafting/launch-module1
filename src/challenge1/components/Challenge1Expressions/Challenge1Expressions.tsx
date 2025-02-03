@@ -281,23 +281,23 @@ const greeting = "¡Hola, " + name + "!"; // greeting = "¡Hola, Luis García!"`
               identificador, que resuelva al valor{" "}
               <code>&quot;Mi amiga Marta tiene 29 años&quot;</code>.
             </li>
-            <li>
-              Describe las expresiones señaladas. Di todos los tipos de
-              expresiones que ves en cada una, y a qué valor resuelven.
-              <CodeJs>{`let age = 54;
+          </ul>
+        </li>
+        <li>
+          Describe las expresiones señaladas. Di todos los tipos de expresiones
+          que ves en cada una, y a qué valor resuelven.
+          <CodeJs>{`let age = 54;
 
 15 * 3 >= age; // <-- describe esta expresión`}</CodeJs>
-              <CodeJs>{`let year = 2015;
+          <CodeJs>{`let year = 2015;
 let age = 8;
 let currentYear = 2025;
 
 year + age === currentYear; // <-- describe esta expresión`}</CodeJs>
-              <CodeJs>{`let name = "Marta";
+          <CodeJs>{`let name = "Marta";
 let age = 29;
 
 "Marta tiene " + age + " años, y el año que viene tendrá " + age + 1; // <-- describe esta expresión`}</CodeJs>
-            </li>
-          </ul>
         </li>
       </ol>
       <h2>Continúa</h2>
