@@ -8,6 +8,10 @@ import Challenge2Control from "@challenge2/components/Challenge2Control/Challeng
 import Challenge2Conditionals from "@challenge2/components/Challenge2Conditionals/Challenge2Conditionals";
 import Challenge2Ternary from "@challenge2/components/Challenge2Ternary/Challenge2Ternary";
 import Challenge2Loops from "@challenge2/components/Challenge2Loops/Challenge2Loops";
+import Challenge2Arrays from "../../components/Challenge2Arrays/Challenge2Arrays";
+import Challenge2CreateArray from "../../components/Challenge2CreateArray/Challenge2CreateArray";
+import Challenge2IterateArray from "../../components/Challenge2IterateArray/Challenge2IterateArray";
+import Challenge2ArrayMethods from "../../components/Challenge2ArrayMethods/Challenge2ArrayMethods";
 
 const Challenge2Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -23,14 +27,18 @@ const Challenge2Page: React.FC = () => {
     | "introduccion"
     | "entregas"
     | "typescript"
-    | "estructuras-de-control";
+    | "estructuras-de-control"
+    | "arrays";
   type Subsection =
     | "undefined"
     | "tu-primer-programa-en-typescript"
     | "type-checking"
     | "condicionales"
     | "expresiones-ternarias"
-    | "bucles";
+    | "bucles"
+    | "crear-y-modificar-un-array"
+    | "recorrer-un-array"
+    | "metodos-de-arrays";
 
   if (sectionId === "introduccion") {
     return <Challenge2Intro />;
@@ -69,6 +77,24 @@ const Challenge2Page: React.FC = () => {
 
     if (subsectionId === "bucles") {
       return <Challenge2Loops />;
+    }
+  }
+
+  if (sectionId === "arrays") {
+    if (!subsectionId) {
+      return <Challenge2Arrays />;
+    }
+
+    if (subsectionId === "crear-y-modificar-un-array") {
+      return <Challenge2CreateArray />;
+    }
+
+    if (subsectionId === "recorrer-un-array") {
+      return <Challenge2IterateArray />;
+    }
+
+    if (subsectionId === "metodos-de-arrays") {
+      return <Challenge2ArrayMethods />;
     }
   }
 };
