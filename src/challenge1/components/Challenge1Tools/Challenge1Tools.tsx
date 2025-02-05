@@ -73,7 +73,7 @@ const Challenge1Tools: React.FC = () => {
         <p>
           Tómate un rato para instalar las extensiones necesarias para el curso
           y para configurar el editor:{" "}
-          <Link to="/challenge1/herramientas/configuracion-vs-code">
+          <Link to="/challenge1/herramientas/configuracion-vs-code/">
             configuración del VS Code
           </Link>
           .
@@ -102,7 +102,7 @@ const Challenge1Tools: React.FC = () => {
       <p>
         ¿Sabes cómo se configura Git? Por consola 🤓 . Aquí tienes los pasos
         para configurarlo:{" "}
-        <Link to="/challenge1/herramientas/configuracion-git">
+        <Link to="/challenge1/herramientas/configuracion-git/">
           Configuración de Git
         </Link>
       </p>
@@ -179,7 +179,7 @@ const Challenge1Tools: React.FC = () => {
       </p>
       <p>
         Ahora ya tienes tu ordenador un poco más preparado. Puedes continuar con
-        la <Link to="/challenge1/calentando-motores-js">fase 3</Link>.
+        la <Link to="/challenge1/calentando-motores-js/">fase 3</Link>.
       </p>
     </>
   );

@@ -138,7 +138,7 @@ const Challenge2FirstProgram: React.FC = () => {
         Ahora que has programado por primera vez en TypeScript, vamos a estudiar
         un poco mejor cómo funciona una de las características más importantes
         de TS:{" "}
-        <Link to="/challenge2/typescript/type-checking">el type-checking</Link>
+        <Link to="/challenge2/typescript/type-checking/">el type-checking</Link>
       </p>
     </>
   );

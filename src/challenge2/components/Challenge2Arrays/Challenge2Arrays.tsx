@@ -91,7 +91,7 @@ console.log(names[position + 1]); // Ana`}</CodeTs>
       </p>
       <CodeTs>{`console.log(names.at(-1)); // Ana
 console.log(names.at(-2)); // Juan`}</CodeTs>
-      <h3 id="entrega-r2-arrays">
+      <h3 id="entrega-r2-arrays-crea-una-lista-de-canciones">
         Entrega <code>R2-arrays</code>: Crea una lista de canciones
       </h3>
       <p>
@@ -146,7 +146,7 @@ console.log(names.at(-2)); // Juan`}</CodeTs>
       </div>
       <p>
         Ahora vamos a ver las diferentes maneras que tenemos para{" "}
-        <Link to="/challenge2/arrays/crear-y-modificar-un-array">
+        <Link to="/challenge2/arrays/crear-y-modificar-un-array/">
           crear y modificar un array
         </Link>
         .

@@ -49,10 +49,10 @@ const Challenge1Intro: React.FC = () => {
       <h3>Entregas</h3>
       <p>
         Aquí tienes un resumen de todo lo que tendrás que entregar en este reto:{" "}
-        <Link to="/challenge1/entregas">Entregas del reto 1</Link>
+        <Link to="/challenge1/entregas/">Entregas del reto 1</Link>
       </p>
       <p>
-        Comencemos con <Link to="/challenge1/os">la fase 1</Link>.
+        Comencemos con <Link to="/challenge1/os/">la fase 1</Link>.
       </p>
     </>
   );

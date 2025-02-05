@@ -16,7 +16,7 @@ const Challenge1Deliveries: React.FC = () => {
         entregar el mismo ejercicio más de una vez por si quieres corregirlo.
       </p>
       <h3>
-        <Link to="/challenge1/os#entrega-r1-cli">Entrega R1-CLI</Link>
+        <Link to="/challenge1/os/#entrega-r1-cli">Entrega R1-CLI</Link>
       </h3>
       <p>
         Tienes que entregar un zip con una captura de pantalla de cada uno de
@@ -29,7 +29,7 @@ const Challenge1Deliveries: React.FC = () => {
         cada captura.
       </p>
       <h3>
-        <Link to="/challenge1/herramientas/configuracion-vs-code#entrega-r1-vscode">
+        <Link to="/challenge1/herramientas/configuracion-vs-code/#entrega-r1-vscode">
           Entrega R1-VSCode
         </Link>
       </h3>
@@ -37,7 +37,7 @@ const Challenge1Deliveries: React.FC = () => {
         Tienes que entregar una captura de pantalla de los settings del VS Code.
       </p>
       <h3>
-        <Link to="/challenge1/herramientas/configuracion-git#entrega-r1-git">
+        <Link to="/challenge1/herramientas/configuracion-git/#entrega-r1-git">
           Entrega R1-git
         </Link>
       </h3>
@@ -46,21 +46,21 @@ const Challenge1Deliveries: React.FC = () => {
         el comando como la salida de la terminal después de lanzar el comando.
       </p>
       <h3>
-        <Link to="/challenge1/calentando-motores-js/variables#entrega-r1-variables">
+        <Link to="/challenge1/calentando-motores-js/variables/#entrega-r1-variables">
           Entrega R1-variables
         </Link>
       </h3>
       <p>En el ejercicio 1 tendrás que entregar la respuesta en texto.</p>
       <p>En el ejercicio 2 tendrás que entregar un código JS (en zip).</p>
       <h3>
-        <Link to="/challenge1/calentando-motores-js/expresiones#entrega-r1-expresiones">
+        <Link to="/challenge1/calentando-motores-js/expresiones/#entrega-r1-expresiones">
           Entrega R1-expresiones
         </Link>
       </h3>
       <p>En los ejercicios 1 y 2 tendrás que entregar código JS (en zip).</p>
       <p>En el ejercicio 3 tendrás que entregar la respuesta en texto.</p>
       <h3>
-        <Link to="/challenge1/calentando-motores-js/finaliza-tu-primer-programa#entrega-r1-school-report">
+        <Link to="/challenge1/calentando-motores-js/finaliza-tu-primer-programa/#entrega-r1-school-report">
           Entrega R1-school-report
         </Link>
       </h3>
@@ -68,7 +68,7 @@ const Challenge1Deliveries: React.FC = () => {
         Tienes que entregar la URL de tu repositorio de GitHub con el programa.
       </p>
       <h3>
-        <Link to="/challenge1/entorno-de-desarrollo/tu-segundo-programa#entrega-r1-user-validation">
+        <Link to="/challenge1/entorno-de-desarrollo/tu-segundo-programa/#entrega-r1-user-validation">
           Entrega R1-user-validation
         </Link>
       </h3>
@@ -76,13 +76,13 @@ const Challenge1Deliveries: React.FC = () => {
         Tienes que entregar la URL de tu repositorio de GitHub con el programa.
       </p>
       <h3>
-        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-strings#entrega-r1-initial">
+        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-strings/#entrega-r1-initial">
           Entrega R1-initial
         </Link>
       </h3>
       <p>Tendrás que entregar código JS (en zip).</p>
       <h3>
-        <Link to="/challenge1/el-programa-definitivo#entrega-r1-login-register">
+        <Link to="/challenge1/el-programa-definitivo#entrega-r1-login-register/">
           Entrega R1-login-register
         </Link>
       </h3>

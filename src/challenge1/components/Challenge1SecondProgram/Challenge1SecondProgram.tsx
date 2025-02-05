@@ -28,7 +28,7 @@ const Challenge1SecondProgram: React.FC = () => {
       <h3>Operando con strings</h3>
       <p>
         Para desarrollar este programa, tendrás que aprender primero a{" "}
-        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-strings">
+        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-strings/">
           operar con strings
         </Link>
         .
@@ -36,7 +36,7 @@ const Challenge1SecondProgram: React.FC = () => {
       <h3>Operando con numbers</h3>
       <p>
         Ahora revisa cómo{" "}
-        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-numbers">
+        <Link to="/challenge1/entorno-de-desarrollo/operaciones-con-numbers/">
           operar con numbers
         </Link>{" "}
         antes de continuar.
@@ -84,7 +84,7 @@ Es mayor de edad: true`}</CodeText>
       </p>
       <p>
         Cuando finalices, ya sólo te queda ir al{" "}
-        <Link to="/challenge1/el-programa-definitivo">
+        <Link to="/challenge1/el-programa-definitivo/">
           programa definitivo del reto
         </Link>
         .

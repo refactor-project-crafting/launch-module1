@@ -175,7 +175,7 @@ console.log(greeting);`}</CodeJs>
       <p>
         Acabamos de utilizar una serie de conceptos que son fundamentales en la
         programación. Vamos a ir ampliándolos:{" "}
-        <Link to="/challenge1/calentando-motores-js/variables">
+        <Link to="/challenge1/calentando-motores-js/variables/">
           empecemos hablando de variables
         </Link>
         .

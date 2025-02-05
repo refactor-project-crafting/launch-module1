@@ -112,7 +112,7 @@ const Challenge1FinishFirstProgram: React.FC = () => {
       </ul>
       <p>
         Cuando finalices este programa, puedes continuar con la{" "}
-        <Link to="/challenge1/entorno-de-desarrollo">fase 4</Link>.
+        <Link to="/challenge1/entorno-de-desarrollo/">fase 4</Link>.
       </p>
     </>
   );

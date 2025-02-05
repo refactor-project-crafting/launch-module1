@@ -12,6 +12,10 @@ import Challenge2Arrays from "../../components/Challenge2Arrays/Challenge2Arrays
 import Challenge2CreateArray from "../../components/Challenge2CreateArray/Challenge2CreateArray";
 import Challenge2IterateArray from "../../components/Challenge2IterateArray/Challenge2IterateArray";
 import Challenge2ArrayMethods from "../../components/Challenge2ArrayMethods/Challenge2ArrayMethods";
+import Challenge2SongsList from "../../components/Challenge2SongsList/Challenge2SongsList";
+import Challenge2Objects from "../../components/Challenge2Objects/Challenge2Objects";
+import Challenge2ObjectProperties from "../../components/Challenge2ObjectProperties/Challenge2ObjectProperties";
+import Challenge2MusicPlayer from "../../components/Challenge2MusicPlayer/Challenge2MusicPlayer";
 
 const Challenge2Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -28,7 +32,9 @@ const Challenge2Page: React.FC = () => {
     | "entregas"
     | "typescript"
     | "estructuras-de-control"
-    | "arrays";
+    | "arrays"
+    | "objetos"
+    | "reproductor-de-musica";
   type Subsection =
     | "undefined"
     | "tu-primer-programa-en-typescript"
@@ -38,7 +44,9 @@ const Challenge2Page: React.FC = () => {
     | "bucles"
     | "crear-y-modificar-un-array"
     | "recorrer-un-array"
-    | "metodos-de-arrays";
+    | "metodos-de-arrays"
+    | "mejorando-la-lista-de-canciones"
+    | "acceder-propiedades-objeto";
 
   if (sectionId === "introduccion") {
     return <Challenge2Intro />;
@@ -95,6 +103,26 @@ const Challenge2Page: React.FC = () => {
 
     if (subsectionId === "metodos-de-arrays") {
       return <Challenge2ArrayMethods />;
+    }
+
+    if (subsectionId === "mejorando-la-lista-de-canciones") {
+      return <Challenge2SongsList />;
+    }
+  }
+
+  if (sectionId === "objetos") {
+    if (!subsectionId) {
+      return <Challenge2Objects />;
+    }
+
+    if (subsectionId === "acceder-propiedades-objeto") {
+      return <Challenge2ObjectProperties />;
+    }
+  }
+
+  if (sectionId === "reproductor-de-musica") {
+    if (!subsectionId) {
+      return <Challenge2MusicPlayer />;
     }
   }
 };

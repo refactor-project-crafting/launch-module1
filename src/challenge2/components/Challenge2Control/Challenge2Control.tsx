@@ -55,7 +55,7 @@ const Challenge2Control: React.FC = () => {
       <p>
         Vamos con la primera de las estructuras de control que vamos a aprender
         hoy:{" "}
-        <Link to="/challenge2/estructuras-de-control/condicionales">
+        <Link to="/challenge2/estructuras-de-control/condicionales/">
           los condicionales
         </Link>
         .

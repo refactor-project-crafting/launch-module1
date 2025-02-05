@@ -18,7 +18,7 @@ const Challenge2TypeScript: React.FC = () => {
         son capaces de ejecutar directamente el JS que escribes. Al usar
         TypeScript necesitamos meter un paso de compilación. Párate un momento a
         repasar la parte del reto 1 donde hablábamos de esta diferencia:{" "}
-        <Link to="/challenge1/calentando-motores-js#lenguajes-interpretados-vs-lenguajes-compilados">
+        <Link to="/challenge1/calentando-motores-js/#lenguajes-interpretados-vs-lenguajes-compilados">
           Lenguajes interpretados vs lenguajes compilados
         </Link>
         .
@@ -111,7 +111,7 @@ greeting.toUpperCase(); // Nunca se llegaría a ejecutar esta línea`}</CodeTs>
       </p>
       <p>
         ¿Quieres empezar? Pues venga, escribe{" "}
-        <Link to="/challenge2/typescript/tu-primer-programa-en-typescript">
+        <Link to="/challenge2/typescript/tu-primer-programa-en-typescript/">
           tu primer programa en TypeScript
         </Link>
         .

@@ -157,7 +157,7 @@ int main() {
       </div>
       <p>
         Es el momento de demostrar que estás capacitado/a para programar:{" "}
-        <Link to="/challenge1/calentando-motores-js/tu-primer-programa">
+        <Link to="/challenge1/calentando-motores-js/tu-primer-programa/">
           tu primer programa
         </Link>
         .

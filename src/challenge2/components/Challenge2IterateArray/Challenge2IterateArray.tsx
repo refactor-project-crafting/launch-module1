@@ -156,7 +156,9 @@ childrenNames.forEach((childName) => {
       <p>
         Después de haberte peleado con esto, vamos a hacer un repaso de los
         métodos de arrays más importantes:{" "}
-        <Link to="/challenge2/arrays/metodos-de-arrays">Métodos de arrays</Link>
+        <Link to="/challenge2/arrays/metodos-de-arrays/">
+          Métodos de arrays
+        </Link>
         .
       </p>
     </>

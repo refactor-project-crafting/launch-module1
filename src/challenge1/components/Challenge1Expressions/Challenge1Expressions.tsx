@@ -304,7 +304,7 @@ let age = 29;
       <p>
         Ahora que ya conoces algunas piezas fundamentales de JavaScript, es hora
         de que desarrolles tu primer programa de verdad:{" "}
-        <Link to="/challenge1/calentando-motores-js/finaliza-tu-primer-programa">
+        <Link to="/challenge1/calentando-motores-js/finaliza-tu-primer-programa/">
           finaliza tu primer programa
         </Link>
         .

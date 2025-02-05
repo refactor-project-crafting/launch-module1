@@ -268,7 +268,7 @@ const i = 3;`}</CodeJs>
       <p>
         Ahora que ya has aprendido a trabajar con variables, vamos a continuar
         con una pieza importantísima:{" "}
-        <Link to="/challenge1/calentando-motores-js/expresiones">
+        <Link to="/challenge1/calentando-motores-js/expresiones/">
           las expresiones
         </Link>
         .

@@ -1,31 +1,7 @@
 import { Link } from "react-router";
 import CodeTs from "../../../components/CodeTs/CodeTs";
-import { useEffect, useRef } from "react";
 
 const Challenge2ArrayMethods: React.FC = () => {
-  const gistContainer = useRef<HTMLLIElement>(null);
-
-  useEffect(() => {
-    const gistScript = document.createElement("script");
-    const currentGistContainer = gistContainer.current;
-
-    gistScript.src =
-      "https://gist.github.com/the-refactor-project/e81017f2ab24cd0a2edb496c327f0571.js";
-    gistScript.async = true;
-    gistScript.crossOrigin = "anonymous";
-
-    if (currentGistContainer) {
-      currentGistContainer.innerHTML = "";
-      currentGistContainer.appendChild(gistScript);
-    }
-
-    return () => {
-      if (currentGistContainer) {
-        currentGistContainer.innerHTML = "";
-      }
-    };
-  }, []);
-
   return (
     <>
       <h2>Métodos de arrays</h2>
@@ -205,12 +181,56 @@ const childrenNamesList = childrenNames.join(", ");
         <li>
           Words
           <ul>
-            <li id="gist-container" ref={gistContainer}>
+            <li>
               <p>
                 Copia este código, y a partir de él imprime todas las palabras
                 separadas por un espacio y en orden inverso al que aparecen en
                 el array:
               </p>
+              <pre>
+                <code style={{ userSelect: "text" }}>
+                  {`const words = [
+  "confín.",
+  "otro",
+  "al",
+  "uno",
+  "del",
+  "conocido",
+  "mar",
+  "todo",
+  "en",
+  "Temido,",
+  "el",
+  "bravura",
+  "su",
+  "por",
+  "llaman,",
+  "le",
+  "pirata",
+  "Bajel",
+  "bergantín.",
+  "velero",
+  "un",
+  "vuela",
+  "sino",
+  "mar",
+  "el",
+  "corta",
+  "no",
+  "vela,",
+  "toda",
+  "a",
+  "popa",
+  "en",
+  "viento",
+  "banda,",
+  "por",
+  "cañones",
+  "diez",
+  "Con",
+];`}
+                </code>
+              </pre>
             </li>
           </ul>
         </li>
@@ -218,11 +238,9 @@ const childrenNamesList = childrenNames.join(", ");
           Notas
           <ul>
             <li>
-              <p>
-                Crea una variable que almacenará las notas de un examen. Créala
-                primero con <code>let</code> y un array vacío, y después
-                asígnale un array con 5 notas.
-              </p>
+              Crea una variable que almacenará las notas de un examen. Créala
+              primero con <code>let</code> y un array vacío, y después asígnale
+              un array con 5 notas.
             </li>
             <li>
               Crea una nueva variable y asígnale las notas anteriores pero

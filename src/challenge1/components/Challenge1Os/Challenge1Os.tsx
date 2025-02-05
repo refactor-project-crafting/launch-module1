@@ -217,7 +217,7 @@ const Challenge1Os: React.FC = () => {
         Necesitamos que ejecutes todas estas acciones con la terminal o consola
         de tu Sistema Operativo. No uses la interfaz gráfica. Léete primero el
         apartado{" "}
-        <Link to="/challenge1/os/moviendote-por-tu-disco-duro">
+        <Link to="/challenge1/os/moviendote-por-tu-disco-duro/">
           Moviéndote por tu disco duro
         </Link>{" "}
         y tenlo de referencia para que puedas ir consultándolo si lo necesitas.
@@ -226,8 +226,8 @@ const Challenge1Os: React.FC = () => {
       <p>
         De cara a la entrega, <strong>haz una captura de pantalla</strong> de
         cada uno de los pasos que te pedimos. Pásate por el{" "}
-        <Link to="/challenge1/entregas">resumen de entregas</Link> para ver cómo
-        tienes que hacer esta entrega.
+        <Link to="/challenge1/entregas/">resumen de entregas</Link> para ver
+        cómo tienes que hacer esta entrega.
       </p>
       <ol>
         <li>Abre la terminal o consola de tu Sistema Operativo.</li>
@@ -297,7 +297,7 @@ const Challenge1Os: React.FC = () => {
       </p>
       <p>
         Cuando hayas terminado, puedes continuar con la{" "}
-        <Link to="/challenge1/herramientas">fase 2</Link>.
+        <Link to="/challenge1/herramientas/">fase 2</Link>.
       </p>
     </>
   );
