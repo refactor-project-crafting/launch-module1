@@ -8,6 +8,11 @@ import Challenge3Functions from "../../components/Challenge3Functions/Challenge3
 import Challenge3BlackBox from "../../components/Challenge3BlackBox/Challenge3BlackBox";
 import Challenge3InputOutput from "../../components/Challenge3InputOutput/Challenge3InputOutput";
 import Challenge3Expressions from "../../components/Challenge3Expressions/Challenge3Expressions";
+import Challenge3ArraysObjects from "../../components/Challenge3ArraysObjects/Challenge3ArraysObjects";
+import Challenge3ArraysMethods from "../../components/Challenge3ArraysMethods/Challenge3ArraysMethods";
+import Challenge3MixingAll from "../../components/Challenge3MixingAll/Challenge3MixingAll";
+import Challenge3Giveaways from "../../components/Challenge3Giveaways/Challenge3Giveaways";
+import Challenge3Backlog from "../../components/Challenge3Backlog/Challenge3Backlog";
 
 const Challenge3Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -74,6 +79,30 @@ const Challenge3Page: React.FC = () => {
 
     if (subsectionId === "expresiones") {
       return <Challenge3Expressions />;
+    }
+  }
+
+  if (sectionId === "arrays-objetos") {
+    if (!subsectionId) {
+      return <Challenge3ArraysObjects />;
+    }
+
+    if (subsectionId === "metodos-arrays") {
+      return <Challenge3ArraysMethods />;
+    }
+
+    if (subsectionId === "mezclando-todo") {
+      return <Challenge3MixingAll />;
+    }
+  }
+
+  if (sectionId === "app-sorteos") {
+    if (!subsectionId) {
+      return <Challenge3Giveaways />;
+    }
+
+    if (subsectionId === "backlog") {
+      return <Challenge3Backlog />;
     }
   }
 };
