@@ -2,18 +2,24 @@ import { NavLink, useLocation } from "react-router";
 import { useFlagsmith } from "flagsmith/react";
 import useConsoleDebug from "../../debug/useConsoleDebug";
 import "./Sidebar.css";
+import { useAuth } from "../../auth/useAuth";
 
 const Sidebar: React.FC = () => {
   const flagsmith = useFlagsmith();
   const debug = useConsoleDebug();
+  const { logout } = useAuth();
+
+  const location = useLocation();
 
   const publishedChallengeNumber = Number(
     flagsmith.getValue("challenge-number")
   );
-
   debug("Challenge publicado: ", publishedChallengeNumber);
 
-  const location = useLocation();
+  if (publishedChallengeNumber === 0) {
+    logout();
+    return;
+  }
 
   const currentPath = location.pathname.replace(/\/$/, "");
 
