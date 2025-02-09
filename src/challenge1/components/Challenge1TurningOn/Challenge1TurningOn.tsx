@@ -88,7 +88,9 @@ int main() {
       <p>
         JavaScript es un <strong>lenguaje de alto nivel</strong>.
       </p>
-      <h2>Lenguajes interpretados vs lenguajes compilados</h2>
+      <h2 id="lenguajes-interpretados-vs-lenguajes-compilados">
+        Lenguajes interpretados vs lenguajes compilados
+      </h2>
       <p>
         No todos los entornos de ejecución entienden el código tal y como lo
         escribimos. En el caso de JavaScript, sus entornos de ejecución sí

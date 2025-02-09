@@ -12,12 +12,12 @@ import "./styles/styles.css";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <FlagsmithProvider flagsmith={flagsmith}>
-      <AuthContextProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <AuthContextProvider>
           <ScrollToTop />
           <AppRouter />
-        </BrowserRouter>
-      </AuthContextProvider>
+        </AuthContextProvider>
+      </BrowserRouter>
     </FlagsmithProvider>
   </StrictMode>
 );

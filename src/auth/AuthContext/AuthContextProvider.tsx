@@ -9,13 +9,20 @@ import {
   supabase,
 } from "../supabase";
 import { getCookie } from "../cookies";
-import flagsmith from "../flagsmith";
 import useConsoleDebug from "../../debug/useConsoleDebug";
+import { useFlagsmith } from "flagsmith/react";
+import { useLocation } from "react-router";
 
 const AuthContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
   const [username, setUsername] = useState("");
 
+  const flagsmith = useFlagsmith();
   const debug = useConsoleDebug();
+  const location = useLocation();
+
+  const publishedChallengeNumber = Number(
+    flagsmith.getValue("challenge-number")
+  );
 
   const login = async () => {
     await signInWithGitHub();
@@ -25,6 +32,18 @@ const AuthContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
     signOut();
     setUsername("");
   };
+
+  useEffect(() => {
+    const currentChallengeNumber = location.pathname.match(/\/?challenge(\d+)/);
+
+    if (!currentChallengeNumber) {
+      return;
+    }
+
+    if (Number(currentChallengeNumber[1]) > publishedChallengeNumber) {
+      logout();
+    }
+  }, [location.pathname, publishedChallengeNumber]);
 
   useEffect(() => {
     const storedUsername = getCookie("trp_username");
@@ -90,7 +109,7 @@ const AuthContextProvider: React.FC<PropsWithChildren> = ({ children }) => {
       .catch((error) =>
         console.error("Error al identificar en Flagsmith: ", error)
       );
-  }, [username, debug]);
+  }, [debug, flagsmith, username]);
 
   const contextValue: AuthContextStructure = useMemo(
     () => ({

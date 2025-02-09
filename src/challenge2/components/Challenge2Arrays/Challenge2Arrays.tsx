@@ -126,7 +126,10 @@ console.log(names.at(-2)); // Juan`}</CodeTs>
       <p>
         Para poder pedir datos al usuario, aquí tienes un starter con todo lo
         necesario:{" "}
-        <Link to="https://github.com/refactor-project-crafting/launch-starter-ts-user-input">
+        <Link
+          to="https://github.com/refactor-project-crafting/launch-starter-ts-user-input"
+          target="_blank"
+        >
           https://github.com/refactor-project-crafting/launch-starter-ts-user-input
         </Link>
       </p>
