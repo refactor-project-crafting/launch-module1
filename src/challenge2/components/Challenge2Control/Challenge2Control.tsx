@@ -27,8 +27,8 @@ const Challenge2Control: React.FC = () => {
           Te habrás dado cuenta de que, aunque ya estemos trabajando con
           TypeScript, a veces nos referimos a reglas de JavaScript. En estos
           casos estamos hablando de cosas que ocurren{" "}
-          <strong>en runtime (tiempo de compilación)</strong>, donde TypeScript
-          ya no existe y el único que opera es JavaScript. Por eso es importante
+          <strong>en runtime (tiempo de ejecución)</strong>, donde TypeScript ya
+          no existe y el único que opera es JavaScript. Por eso es importante
           conocer las reglas de JavaScript, aunque estemos programando en
           TypeScript.
         </p>
