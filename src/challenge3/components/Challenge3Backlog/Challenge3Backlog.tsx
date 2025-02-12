@@ -101,7 +101,7 @@ const Challenge3Backlog: React.FC = () => {
       </p>
       <p>
         Si el sorteo no existe, debe imprimir un mensaje por consola
-        indicándolo. Si existe, debe añadir el email del usuario a la lista de
+        indicándolo. Si existe, debe añadir el usuario a la lista de
         participantes del sorteo, y después invocar a la función{" "}
         <code>saveData</code> para guardar los cambios en disco duro.
       </p>

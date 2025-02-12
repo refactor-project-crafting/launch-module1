@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import CodeTs from "../../../components/CodeTs/CodeTs";
 
 const Challenge3Giveaways: React.FC = () => {
@@ -145,9 +146,9 @@ const Challenge3Giveaways: React.FC = () => {
       </p>
       <p>
         Aquí tienes el backlog del proyecto:{" "}
-        <a href="/challenge3/app-sorteos/backlog">
+        <Link to="/challenge3/app-sorteos/backlog/">
           backlog de la aplicación de sorteos
-        </a>
+        </Link>
         .
       </p>
     </>

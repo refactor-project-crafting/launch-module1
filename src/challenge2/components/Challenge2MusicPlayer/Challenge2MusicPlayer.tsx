@@ -24,7 +24,8 @@ const Challenge2MusicPlayer: React.FC = () => {
       </p>
       <p>
         Te compartimos el repo de lo que ya está desarrollado. Ponlo a funcionar
-        en tu máquina antes de continuar con el ejercicio:{" "}
+        en tu máquina antes de continuar con el ejercicio, aunque ten en cuenta
+        que la compilación te fallará hasta que completes la task 1:{" "}
         <Link
           to="https://github.com/refactor-project-crafting/launch-music-player"
           target="_blank"
