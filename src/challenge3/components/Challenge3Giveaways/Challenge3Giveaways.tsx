@@ -137,7 +137,7 @@ const Challenge3Giveaways: React.FC = () => {
         compilar. En cada paso te indicaremos qué líneas tienes que descomentar
         para que funcione la task.
       </p>
-      <h2 id="entrega-r3-sorteos-">
+      <h2 id="entrega-r3-sorteos">
         Entrega <code>R3-sorteos</code>
       </h2>
       <p>

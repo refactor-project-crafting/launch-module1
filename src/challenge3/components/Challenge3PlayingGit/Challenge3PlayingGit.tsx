@@ -43,7 +43,10 @@ const Challenge3PlayingGit: React.FC = () => {
           Ahora haz un commit con la modificación del README y el mensaje
           &quot;Add tasks to README&quot;.
         </li>
-        <li>Comprueba en Git Graph el log de tu repositorio.</li>
+        <li>
+          Comprueba en Git Graph el log de tu repositorio (esto no es por
+          comandos).
+        </li>
         <li>Conecta tu repositorio local con tu repositorio remoto.</li>
         <li>Sube tus cambios al repositorio remoto.</li>
       </ol>

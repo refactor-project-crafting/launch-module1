@@ -186,7 +186,7 @@ const sum = numbers.reduce(
         Crea un array con nombres de personas y obtén un string con todos los
         nombres concatenados.
       </p>
-      <h3 id="entrega-r3-metodos-arrays-">
+      <h3 id="entrega-r3-metodos-arrays">
         Entrega <code>R3-metodos-arrays</code>
       </h3>
       <p>

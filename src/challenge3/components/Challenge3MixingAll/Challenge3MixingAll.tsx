@@ -92,7 +92,7 @@ const juancho = dogs.find((dog) => dog.name === "Juancho");`}</CodeTs>
           <code>true</code> si todas las canciones del array son de Queen.
         </li>
       </ol>
-      <h3 id="entrega-r3-arrays-objetos-">
+      <h3 id="entrega-r3-arrays-objetos">
         Entrega <code>R3-arrays-objetos</code>
       </h3>
       <p>
