@@ -137,7 +137,11 @@ const areAllNamesLong = names.every((name) => name.length > 20); // Devuelve tru
       </p>
       <CodeTs>{`const names = ["Luis", "Marta", "Juan", "Ana"];
 
+
 names.forEach((name) => console.log(\`Bye \${name}!\`));`}</CodeTs>
+      <h3>
+        <code>map()</code>
+      </h3>
       <p>
         El método <code>map()</code> nos permite crear un nuevo array a partir
         de otro array, donde cada elemento del nuevo array será uno del primero
