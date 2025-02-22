@@ -32,10 +32,25 @@ const Challenge4Deliveries: React.FC = () => {
         </Link>
       </h3>
       <p>Entrega la URL de tu proyecto de CodeSandbox.</p>
-
+      <h3>
+        <Link to="/challenge4/presentacion/accesibilidad/#entrega-r4-a11y-informe">
+          Entrega <code>R4-a11y-informe</code>
+        </Link>
+      </h3>
+      <p>Escribe la lista de puntos en el mismo formulario.</p>
+      <h3>
+        <Link to="/challenge4/presentacion/accesibilidad/#entrega-r4-a11y-mejoras">
+          Entrega <code>R4-a11y-mejoras</code>
+        </Link>
+      </h3>
+      <p>Entrega la URL con la versión de la web accesible.</p>
+      <h3>
+        <Link to="/challenge4/especificaciones">
+          Entrega <code>classroom</code>
+        </Link>
+      </h3>
       <p>
-        En este reto sólo tienes que hacer una entrega para el proyecto, y en
-        esta ocasión{" "}
+        En este proyecto sólo tienes que hacer una entrega, y en esta ocasión{" "}
         <strong>tienes que realizar la entrega al principio</strong>, no cuando
         hayas acabado el proyecto. Conforme vayas avanzando en el repo y en el
         tablero de Trello, se podrá ir viendo tu avance.

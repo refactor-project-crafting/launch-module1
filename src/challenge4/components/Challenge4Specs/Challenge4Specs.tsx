@@ -35,9 +35,9 @@ const Challenge4Specs: React.FC = () => {
         <li>unas estadísticas con informes sobre los cursos y los alumnos</li>
       </ul>
       <p>
-        Si ejecutas la aplicación verás que ya hay una UI donde el usuario puede
-        avanzar por los cuatro listados, y el listado de estudiantes está ya
-        inicializado con cuatro estudiantes.
+        Si ejecutas la aplicación verás que ya hay una UI incompleta. Cuando
+        puedas acceder al listado de estudiantes, verás que está ya inicializado
+        con cuatro estudiantes.
       </p>
     </>
   );

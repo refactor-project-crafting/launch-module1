@@ -9,6 +9,7 @@ import Challenge4Html from "../../components/Challenge4Html/Challenge4Html";
 import Challenge4Css from "../../components/Challenge4Css/Challenge4Css";
 import Challenge4TagsAttributes from "../../components/Challenge4TagsAttributes/Challenge4TagsAttributes";
 import Challenge4CssProperties from "../../components/Challenge4CssProperties/Challenge4CssProperties";
+import Challenge4A11y from "../../components/Challenge4A11y/Challenge4A11y";
 
 const Challenge4Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -31,6 +32,7 @@ const Challenge4Page: React.FC = () => {
     | "etiquetas-atributos"
     | "css"
     | "propiedades-css"
+    | "accesibilidad"
     | "user-stories"
     | "backlog";
 
@@ -61,6 +63,10 @@ const Challenge4Page: React.FC = () => {
 
     if (subsectionId === "propiedades-css") {
       return <Challenge4CssProperties />;
+    }
+
+    if (subsectionId === "accesibilidad") {
+      return <Challenge4A11y />;
     }
   }
 

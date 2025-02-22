@@ -415,6 +415,11 @@ const Sidebar: React.FC = () => {
                         Propiedades CSS
                       </NavLink>
                     </li>
+                    <li>
+                      <NavLink end to="/challenge4/presentacion/accesibilidad/">
+                        Accesibilidad
+                      </NavLink>
+                    </li>
                   </ul>
                 </li>
                 <li>
