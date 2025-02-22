@@ -19,8 +19,9 @@ const Challenge4Intro: React.FC = () => {
         los cursos, los alumnos y las notas de los alumnos.
       </p>
       <p>
-        La interfaz de usuario está bastante avanzada, pero el equipo de
-        desarrollo necesita ayuda para implementar la lógica de la aplicación.
+        La interfaz de usuario está empezada, pero el equipo de desarrollo
+        necesita ayuda para finalizarla y también para implementar la lógica de
+        la aplicación.
       </p>
       <p>
         Para este proyecto tendrás que crear un tablero en Trello. El tablero
@@ -55,12 +56,8 @@ const Challenge4Intro: React.FC = () => {
         </Link>
       </p>
       <p>
-        Y aquí tienes las especificaciones de la aplicación:{" "}
-        <Link to="/challenge4/especificaciones/">especificaciones</Link>
-      </p>
-      <p>
-        Antes de seguir, repasa el formato de{" "}
-        <Link to="/challenge4/entregas/">esta entrega</Link>.
+        Antes de empezar a trabajar en el proyecto, vamos a hablar un poco de{" "}
+        <Link to="/challenge4/presentacion/">la capa de presentación</Link>.
       </p>
     </>
   );

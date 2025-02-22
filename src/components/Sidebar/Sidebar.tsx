@@ -385,8 +385,41 @@ const Sidebar: React.FC = () => {
               </NavLink>
               <ul className={currentChallengeNumber === 4 ? "open" : ""}>
                 <li>
+                  <NavLink end to="/challenge4/presentacion/">
+                    <strong>Fase 1:</strong> La capa de presentación
+                  </NavLink>
+                  <ul>
+                    <li>
+                      <NavLink end to="/challenge4/presentacion/html/">
+                        HTML
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        end
+                        to="/challenge4/presentacion/etiquetas-atributos/"
+                      >
+                        Etiquetas y atributos
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink end to="/challenge4/presentacion/css/">
+                        CSS
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        end
+                        to="/challenge4/presentacion/propiedades-css/"
+                      >
+                        Propiedades CSS
+                      </NavLink>
+                    </li>
+                  </ul>
+                </li>
+                <li>
                   <NavLink end to="/challenge4/especificaciones/">
-                    <strong>Fase 1:</strong> Especificaciones
+                    <strong>Fase 2:</strong> Especificaciones del proyecto
                   </NavLink>
                   <ul>
                     <li>
