@@ -21,7 +21,7 @@ const Challenge4Deliveries: React.FC = () => {
       </h3>
       <p>Entrega la URL de tu diagrama de Excalidraw.</p>
       <h3>
-        <Link to="/challenge4/presentacion/html/#entrega-r4-html">
+        <Link to="/challenge4/presentacion/etiquetas-atributos/#entrega-r4-html">
           Entrega <code>R4-html</code>
         </Link>
       </h3>
@@ -50,10 +50,10 @@ const Challenge4Deliveries: React.FC = () => {
         </Link>
       </h3>
       <p>
-        En este proyecto sólo tienes que hacer una entrega, y en esta ocasión{" "}
+        En este proyecto{" "}
         <strong>tienes que realizar la entrega al principio</strong>, no cuando
-        hayas acabado el proyecto. Conforme vayas avanzando en el repo y en el
-        tablero de Trello, se podrá ir viendo tu avance.
+        lo hayas acabado. Conforme vayas avanzando en el repo y en el tablero de
+        Trello, se podrá ir viendo tu avance.
       </p>
       <p>Tienes que entregar dos URL:</p>
       <ul>

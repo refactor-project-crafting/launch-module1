@@ -55,7 +55,7 @@ const Challenge4Html: React.FC = () => {
         lugar a esta jerarquía:
       </p>
       <figure style={{ margin: "0 auto", width: 500, textAlign: "center" }}>
-        <img src="/images/html-hierarchy1.png" alt="Jerarquía HTML" />
+        <img src="/images/html-hierarchy.png" alt="Jerarquía HTML" />
       </figure>
       <p>
         Hay algunas etiquetas que no pueden contener nada dentro. Son conocidas

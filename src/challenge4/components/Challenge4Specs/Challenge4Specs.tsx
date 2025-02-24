@@ -3,8 +3,8 @@ const Challenge4Specs: React.FC = () => {
     <>
       <h2>Especificaciones de la aplicación</h2>
       <p>
-        La aplicación <code>Classroom</code> se compone de las siguientes
-        entidades:
+        La aplicación <code>Classroom</code> se compone de las siguientes{" "}
+        <strong>entidades principales de dominio</strong>:
       </p>
       <ul>
         <li>
@@ -34,11 +34,6 @@ const Challenge4Specs: React.FC = () => {
         <li>un listado de notas</li>
         <li>unas estadísticas con informes sobre los cursos y los alumnos</li>
       </ul>
-      <p>
-        Si ejecutas la aplicación verás que ya hay una UI incompleta. Cuando
-        puedas acceder al listado de estudiantes, verás que está ya inicializado
-        con cuatro estudiantes.
-      </p>
     </>
   );
 };

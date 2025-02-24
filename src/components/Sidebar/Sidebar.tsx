@@ -423,20 +423,27 @@ const Sidebar: React.FC = () => {
                   </ul>
                 </li>
                 <li>
-                  <NavLink end to="/challenge4/especificaciones/">
-                    <strong>Fase 2:</strong> Especificaciones del proyecto
+                  <NavLink end to="/challenge4/proyecto/">
+                    <strong>Fase 2:</strong> El proyecto
                   </NavLink>
                   <ul>
                     <li>
-                      <NavLink
-                        end
-                        to="/challenge4/especificaciones/user-stories/"
-                      >
+                      <NavLink end to="/challenge4/proyecto/especificaciones/">
+                        Especificaciones
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink end to="/challenge4/proyecto/user-stories/">
                         User stories
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink end to="/challenge4/especificaciones/backlog/">
+                      <NavLink end to="/challenge4/proyecto/tablero/">
+                        Tablero
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink end to="/challenge4/proyecto/backlog/">
                         Backlog
                       </NavLink>
                     </li>

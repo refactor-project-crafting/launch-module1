@@ -10,6 +10,8 @@ import Challenge4Css from "../../components/Challenge4Css/Challenge4Css";
 import Challenge4TagsAttributes from "../../components/Challenge4TagsAttributes/Challenge4TagsAttributes";
 import Challenge4CssProperties from "../../components/Challenge4CssProperties/Challenge4CssProperties";
 import Challenge4A11y from "../../components/Challenge4A11y/Challenge4A11y";
+import Challenge4Board from "../../components/Challenge4Board/Challenge4Board";
+import Challenge4Project from "../../components/Challenge4Project/Challenge4Project";
 
 const Challenge4Page: React.FC = () => {
   const { sectionId, subsectionId } = useParams<{
@@ -21,11 +23,7 @@ const Challenge4Page: React.FC = () => {
     return;
   }
 
-  type Section =
-    | "introduccion"
-    | "entregas"
-    | "presentacion"
-    | "especificaciones";
+  type Section = "introduccion" | "entregas" | "presentacion" | "proyecto";
   type Subsection =
     | "undefined"
     | "html"
@@ -33,6 +31,8 @@ const Challenge4Page: React.FC = () => {
     | "css"
     | "propiedades-css"
     | "accesibilidad"
+    | "especificaciones"
+    | "tablero"
     | "user-stories"
     | "backlog";
 
@@ -70,9 +70,17 @@ const Challenge4Page: React.FC = () => {
     }
   }
 
-  if (sectionId === "especificaciones") {
+  if (sectionId === "proyecto") {
     if (!subsectionId) {
+      return <Challenge4Project />;
+    }
+
+    if (subsectionId === "especificaciones") {
       return <Challenge4Specs />;
+    }
+
+    if (subsectionId === "tablero") {
+      return <Challenge4Board />;
     }
 
     if (subsectionId === "user-stories") {
